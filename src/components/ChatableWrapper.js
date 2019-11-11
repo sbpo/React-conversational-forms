@@ -10,7 +10,8 @@ class ChatableWrapper extends Component {
     };
   }
   componentDidMount() {
-    const { promise, typingTime, debugging, next, autoContinue } = this.props;
+    const { promise, typingTime, debugging, next, children } = this.props;
+    const autoContinue = typeof children !== "function";
     if (promise) {
       promise().then(() => {
         this.setState({ typing: false }, () => next());

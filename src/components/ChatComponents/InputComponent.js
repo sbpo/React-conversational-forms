@@ -163,7 +163,7 @@ class InputComponent extends Component {
 }
 
 InputComponent.propTypes = {
-  type: PropTypes.string,
+  type: PropTypes.oneOf(["text", "textArea", "email"]),
   rows: PropTypes.number,
   placeholder: PropTypes.string,
   required: PropTypes.bool,

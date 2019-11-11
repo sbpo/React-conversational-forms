@@ -26,7 +26,7 @@ class QuickReply extends Component {
     let optionsJsx = options.map((a, i) => (
       <button
         key={i}
-        className="answer"
+        className="option"
         style={disabled ? { border: "1px solid #ccc", color: "#ccc" } : {}}
         onClick={() => this.onSelect(a)}
       >
@@ -36,7 +36,7 @@ class QuickReply extends Component {
 
     return (
       <div>
-        <div className="answerContainer">{optionsJsx}</div>
+        <div className="quickreply">{optionsJsx}</div>
         {optionSelected && (
           <ChatBubble
             answer={true}

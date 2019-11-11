@@ -1,7 +1,9 @@
-.answerContainer {
+.quickreply {
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
-.answerContainer .answer {
+.quickreply .option {
   background: #fff;
   margin: 0px 5px;
   border-radius: 15px;

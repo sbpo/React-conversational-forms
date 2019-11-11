@@ -1,6 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import Conversation from "./components/Conversation";
 import ChatBubble from "./components/ChatComponents/ChatBubble";
 import ChatableWrapper from "./components/ChatableWrapper";
@@ -20,6 +18,7 @@ function App() {
       >
         <Conversation>
           <ChatBubble text="hello chat" typingTime={400} />
+
           <QuickReply
             onSelect={() => {}}
             options={[
@@ -27,14 +26,19 @@ function App() {
               { text: "Pancakes", id: "pan" }
             ]}
           />
+
           <ChatBubble text="Very cool!" typingTime={500} />
+
           <ChatableWrapper typingTime={500}>
             {next => <div onClick={next}>Hello conversation</div>}
           </ChatableWrapper>
-          <InputComponent type="textBox" required onSubmit={() => {}} />
-          <ChatableWrapper autoContinue typingTime={500}>
+
+          <InputComponent type="textArea" required onSubmit={() => {}} />
+
+          <ChatableWrapper typingTime={500}>
             <div>Auto continue chat component</div>
           </ChatableWrapper>
+
           <ChatBubble text="Super duper" typingTime={500} />
         </Conversation>
       </div>
