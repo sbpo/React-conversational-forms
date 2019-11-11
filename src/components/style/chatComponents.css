@@ -1,0 +1,120 @@
+.chat-row {
+  margin-bottom: 20px;
+  padding: 0 2rem;
+  display: flex;
+}
+
+.right-row {
+  flex-direction: row-reverse;
+}
+
+.bubble {
+  border-radius: 1em;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+  box-shadow: 0 15px 35px rgba(79, 79, 100, 0.055),
+    0 5px 15px rgba(160, 160, 160, 0.07);
+  text-align: left;
+  max-width: 80%;
+}
+.bubble p {
+  margin: 0;
+}
+
+.text-bubble {
+  background: #f1f0f0;
+  color: #000;
+}
+
+.answer-bubble {
+  background-color: #426ba1;
+  color: white;
+  -webkit-transition: width 0.5s, max-width 0.5s, height 0.5s;
+  -o-transition: width 0.5s, max-width 0.5s, height 0.5s;
+  transition: width 0.5s, max-width 0.5s, height 0.5s;
+}
+
+.input-component {
+  position: relative;
+}
+
+.input-box {
+  max-width: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 0px;
+  -webkit-transition: width 0.5s, max-width 0.5s, height 0.5s;
+  -o-transition: width 0.5s, max-width 0.5s, height 0.5s;
+  transition: width 0.5s, max-width 0.5s, height 0.5s;
+}
+
+.input-box input {
+  border: 1px solid #aaa;
+  width: 100% !important;
+  margin: 0px;
+  border-radius: 1em;
+  padding: 6px 10px 6px 10px;
+  outline: none;
+  background-color: none;
+  padding-right: 45px !important;
+}
+.input-box textarea {
+  width: 100% !important;
+  height: 100%;
+  margin: 0px;
+  border-radius: 1em;
+  padding: 10px;
+  border: 1px solid #aaa;
+  resize: none;
+  outline: none;
+  padding-right: 45px !important;
+  background-color: none;
+}
+
+.input-component > p {
+  padding-right: 35px !important;
+}
+
+.input-box input:focus {
+  box-shadow: none;
+}
+
+.owner-icon {
+  left: -35px;
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  background: #222;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.input-component > .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  line-height: 100%;
+  border-radius: 0 1em 1em 0;
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.send {
+  border: 1px solid #aaa;
+  background: #426ba1;
+  color: #fff;
+}
+.send svg {
+  fill: #fff;
+}
+
+.edit-icon {
+  background: #fff;
+}
+.edit-icon svg {
+  fill: #426ba1;
+}

@@ -1,0 +1,13 @@
+.answerContainer {
+  margin-bottom: 20px;
+}
+.answerContainer .answer {
+  background: #fff;
+  margin: 0px 5px;
+  border-radius: 15px;
+  border: 1px solid #0084ff;
+  color: #0084ff;
+  line-height: 30px;
+  padding: 0px 10px 0px 10px;
+  outline: none;
+}

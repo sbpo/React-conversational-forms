@@ -1,0 +1,6 @@
+.convo-forms,
+.convo-forms *,
+.convo-forms *::before,
+.convo-forms *::after {
+  box-sizing: border-box;
+}
