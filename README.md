@@ -1,7 +1,7 @@
 Create a custom conversational UI in react in less than 5 minutes.
 Spice up your forms to get user input in an exiting way, impress your friends or create something truly special.
 
-### Quick start
+## Quick start
 
 Installing this package with npm or yarn.
 
@@ -17,7 +17,7 @@ To create a conversational UI use the Conversation wrapper component. Then wrap 
 
 ```javascript
 import React from 'react'
-import {Conversation, ChatableWrapper} from 'vue-notification'
+import {Conversation, ChatableWrapper} from 'react-simple-conversation'
 
 function MyConversation() {
 
@@ -25,7 +25,7 @@ return(
   <Conversation>
 
     <ChatableWrapper typingTime={500}>
-      <div>This component will display after 500 ms typing time, and then auto continue</div>
+      <div>This component will display after 500ms typing time, and then auto-continue</div>
     </ChatableWrapper>
 
     <ChatableWrapper typingTime={500}>
@@ -35,7 +35,7 @@ return(
     </ChatableWrapper>
 
     <ChatableWrapper promise={new Promise(r=>setTimeout(r, 500))}>
-        <div>this custom component will display after the promise is fulfilled</div>
+        <div>this custom component will display after the promise is resolved</div>
     </ChatableWrapper>
 
   </Conversation>
