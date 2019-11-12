@@ -8,7 +8,7 @@ class ChatAnimation extends Component {
     this.state = {
       lottieAnimation: false
     };
-    this.dot;
+    this.dot = null;
   }
 
   animationStyle = {
@@ -34,7 +34,13 @@ class ChatAnimation extends Component {
   }
 
   render() {
-    return <div id="dot" ref={this.dot} style={this.animationStyle}></div>;
+    return (
+      <div
+        id="dot"
+        ref={el => (this.dot = el)}
+        style={this.animationStyle}
+      ></div>
+    );
   }
 }
 
