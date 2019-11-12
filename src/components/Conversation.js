@@ -28,37 +28,6 @@ class Conversation extends Component {
     this.setState({ currentList: this.state.currentList });
   }
 
-  componentWillUpdate(nextProps) {
-    /*for (
-      let i = 0;
-      i < nextProps.children.length - this.childrenWithProps.length;
-      i++
-    ) {
-      const newChild = React.cloneElement(nextProps.children[i], {
-        next: continueConversation => this.next(newChild, continueConversation),
-        id: i,
-        debugging: this.props.debugging
-      });
-      this.state.currentList[i] = newChild;
-    }
-
-    if (this.state.currentList.length > 0) {
-      for (
-        let i = this.state.currentList.length, j = 0;
-        i < nextProps.children.length;
-        i++, j++
-      ) {
-        const newChild = React.cloneElement(nextProps.children[i], {
-          next: continueConversation =>
-            this.next(newChild, continueConversation),
-          id: i,
-          debugging: this.props.debugging
-        });
-        this.childrenWithProps[j] = newChild;
-      }
-    }*/
-  }
-
   componentDidUpdate() {
     scrollToComponent(this.object, {
       offset: 20,
