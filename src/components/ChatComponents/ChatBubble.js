@@ -30,28 +30,17 @@ class ChatBubble extends Component {
   render() {
     const { typing } = this.state;
     const { icon, answer, html, text } = this.props;
-    const chatBubble = (
-      <div
-        className={`chat-row ${answer ? "right-row" : ""}`}
-        ref={section => {
-          this.textObject = section;
-        }}
-      >
+    const ChatBubble = (
+      <div className={`chat-row ${answer ? "right-row" : ""}`}>
         <div className={`bubble ${answer ? "answer-bubble" : "text-bubble"}`}>
           <p className="text">{html ? html : text}</p>
           {icon && <img src={icon} className="owner-icon" />}
         </div>
       </div>
     );
-    const chatAni = (
-      <ChatAnimation
-        ref={section => {
-          this.chatObject = section;
-        }}
-      />
-    );
+    const chatAni = <ChatAnimation />;
 
-    return typing ? chatAni : chatBubble;
+    return typing ? chatAni : ChatBubble;
   }
 }
 

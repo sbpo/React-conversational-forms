@@ -8,6 +8,7 @@ class ChatAnimation extends Component {
     this.state = {
       lottieAnimation: false
     };
+    this.dot;
   }
 
   animationStyle = {
@@ -17,7 +18,7 @@ class ChatAnimation extends Component {
 
   componentDidMount() {
     let anim = Lottie.loadAnimation({
-      container: this.refs.dot,
+      container: this.dot,
       renderer: "svg",
       loop: true,
       animationData: animation
@@ -33,7 +34,7 @@ class ChatAnimation extends Component {
   }
 
   render() {
-    return <div id="dot" ref="dot" style={this.animationStyle}></div>;
+    return <div id="dot" ref={this.dot} style={this.animationStyle}></div>;
   }
 }
 

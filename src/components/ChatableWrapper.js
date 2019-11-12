@@ -29,11 +29,7 @@ class ChatableWrapper extends Component {
     const { typing } = this.state;
     const { children, next } = this.props;
     return typing ? (
-      <ChatAnimation
-        ref={section => {
-          this.chatObject = section;
-        }}
-      />
+      <ChatAnimation />
     ) : typeof children === "function" ? (
       children(next)
     ) : (

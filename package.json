@@ -1,22 +1,39 @@
 {
-  "name": "convo",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-simple-conversation",
+  "version": "0.1.1",
+  "main": "dis/index.js",
+  "files": [
+    "dis/*"
+  ],
+  "private": false,
   "dependencies": {
     "lottie-web": "^5.5.9",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0",
     "react-scroll-to-component": "^1.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack --watch"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^3.2.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^3.2.1"
+  },
+  "peerDependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   },
   "browserslist": {
     "production": [
